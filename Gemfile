@@ -3,8 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-#Make errors better looking
-gem 'better_errors', '~> 2.4'
+
 
 #A modern CSS framework based on Flexbox
 gem 'bulma-rails', '~> 0.8.2'
@@ -55,6 +54,10 @@ group :development do
   gem 'guard', '~> 2.16', '>= 2.16.2'
   #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  #Make errors better looking
+  gem 'better_errors', '~> 2.4'
+  gem "binding_of_caller"
+
 end
 
 group :test do
